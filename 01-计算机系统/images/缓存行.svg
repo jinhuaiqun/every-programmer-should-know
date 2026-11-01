@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="270" viewBox="0 0 640 270" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">内存里连续存放的数据（比如数组）</text>
+
+  <rect x="30" y="48" width="55" height="48" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="57" y="77" text-anchor="middle" font-size="13" fill="#111827">0</text>
+  <rect x="93" y="48" width="55" height="48" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="120" y="77" text-anchor="middle" font-size="13" fill="#111827">1</text>
+  <rect x="156" y="48" width="55" height="48" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="183" y="77" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">2</text>
+  <rect x="219" y="48" width="55" height="48" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="246" y="77" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">3</text>
+  <rect x="282" y="48" width="55" height="48" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="309" y="77" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">4</text>
+  <rect x="345" y="48" width="55" height="48" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="372" y="77" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">5</text>
+  <rect x="408" y="48" width="55" height="48" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="435" y="77" text-anchor="middle" font-size="13" fill="#111827">6</text>
+  <rect x="471" y="48" width="55" height="48" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="498" y="77" text-anchor="middle" font-size="13" fill="#111827">7</text>
+
+  <rect x="150" y="40" width="256" height="64" fill="none" stroke="#e07b00" stroke-width="2" stroke-dasharray="6 4" rx="6"/>
+  <text x="278" y="124" text-anchor="middle" font-size="12" fill="#e07b00">↑ 缓存行：一次搬一整块（64 字节）</text>
+
+  <line x1="278" y1="104" x2="278" y2="150" stroke="#e07b00" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="150" y="160" width="256" height="52" rx="8" fill="#fff7ed" stroke="#e07b00" stroke-width="2"/>
+  <text x="278" y="190" text-anchor="middle" font-size="13" fill="#111827">缓存里现在有：2、3、4、5（整块）</text>
+
+  <text x="20" y="245" font-size="12" fill="#6b7280">访问 2 时，CPU 把挨着的 3、4、5 一起搬进缓存——接着访问它们就"命中"，所以顺序访问快。</text>
+</svg>
