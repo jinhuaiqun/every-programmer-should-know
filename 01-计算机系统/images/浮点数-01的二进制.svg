@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="235" viewBox="0 0 560 235" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">0.1 在二进制里是无限循环小数</text>
+
+  <text x="20" y="62" font-size="14" fill="#374151">0.1（十进制）= 二进制</text>
+  <text x="20" y="90" font-size="18" fill="#111827">0.0001100110011001100110011<tspan fill="#e07b00" font-weight="bold">……</tspan></text>
+  <text x="20" y="112" font-size="12" fill="#e07b00">「0011」这一段会一直循环，永远写不完</text>
+
+  <text x="20" y="150" font-size="13" fill="#374151">计算机的尾数只有 52 位（有限），装不下 → 只能截断，尾巴丢掉</text>
+
+  <rect x="20" y="165" width="380" height="34" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="210" y="187" text-anchor="middle" font-size="12" fill="#047857">前 52 位（存下来的部分）</text>
+  <text x="425" y="187" font-size="14" font-weight="bold" fill="#ef4444">→ 丢掉</text>
+
+  <text x="20" y="222" font-size="12" fill="#6b7280">于是存进去的 0.1，是"很接近、但不完全等于 0.1"的近似值。</text>
+</svg>
