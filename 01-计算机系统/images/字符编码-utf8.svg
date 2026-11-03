@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="170" viewBox="0 0 660 170" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">同一个「中」字：Unicode 负责编号，UTF-8 负责存成字节</text>
+
+  <rect x="30" y="55" width="80" height="56" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="70" y="88" text-anchor="middle" font-size="20" font-weight="bold" fill="#111827">中</text>
+  <text x="70" y="128" text-anchor="middle" font-size="11" fill="#6b7280">字符</text>
+
+  <line x1="110" y1="83" x2="200" y2="83" stroke="#e07b00" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="200" y="55" width="150" height="56" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="275" y="88" text-anchor="middle" font-size="15" fill="#1d4ed8">U+4E2D</text>
+  <text x="275" y="128" text-anchor="middle" font-size="11" fill="#6b7280">Unicode 编号（码点）</text>
+
+  <line x1="350" y1="83" x2="440" y2="83" stroke="#e07b00" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="440" y="55" width="160" height="56" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="520" y="88" text-anchor="middle" font-size="15" fill="#1d4ed8">E4 B8 AD</text>
+  <text x="520" y="128" text-anchor="middle" font-size="11" fill="#6b7280">UTF-8 存成 3 字节</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="290" viewBox="0 0 460 290" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">位运算：把两个数逐位对齐，一位一位算</text>
+
+  <text x="20" y="62" font-size="13" fill="#6b7280">按位运算（与 &amp;、或 |、异或 ^）</text>
+
+  <!-- 行1：& -->
+  <text x="115" y="94" text-anchor="end" font-size="16" fill="#111827">1100</text>
+  <text x="135" y="94" font-size="16" font-weight="bold" fill="#e07b00">&amp;</text>
+  <text x="235" y="94" text-anchor="end" font-size="16" fill="#111827">1010</text>
+  <text x="245" y="94" font-size="16" fill="#6b7280">=</text>
+  <text x="270" y="94" font-size="16" font-weight="bold" fill="#1d4ed8">1000</text>
+  <text x="335" y="94" font-size="12" fill="#6b7280">都 1 才 1</text>
+
+  <!-- 行2：| -->
+  <text x="115" y="126" text-anchor="end" font-size="16" fill="#111827">1100</text>
+  <text x="135" y="126" font-size="16" font-weight="bold" fill="#e07b00">|</text>
+  <text x="235" y="126" text-anchor="end" font-size="16" fill="#111827">1010</text>
+  <text x="245" y="126" font-size="16" fill="#6b7280">=</text>
+  <text x="270" y="126" font-size="16" font-weight="bold" fill="#1d4ed8">1110</text>
+  <text x="335" y="126" font-size="12" fill="#6b7280">有 1 就 1</text>
+
+  <!-- 行3：^ -->
+  <text x="115" y="158" text-anchor="end" font-size="16" fill="#111827">1100</text>
+  <text x="135" y="158" font-size="16" font-weight="bold" fill="#e07b00">^</text>
+  <text x="235" y="158" text-anchor="end" font-size="16" fill="#111827">1010</text>
+  <text x="245" y="158" font-size="16" fill="#6b7280">=</text>
+  <text x="270" y="158" font-size="16" font-weight="bold" fill="#1d4ed8">0110</text>
+  <text x="335" y="158" font-size="12" fill="#6b7280">不同才 1</text>
+
+  <text x="20" y="200" font-size="13" fill="#6b7280">移位（&lt;&lt; 左移 = ×2，&gt;&gt; 右移 = ÷2）</text>
+
+  <!-- 行4：<< -->
+  <text x="115" y="232" text-anchor="end" font-size="16" fill="#111827">1010</text>
+  <text x="135" y="232" font-size="16" font-weight="bold" fill="#e07b00">&lt;&lt;</text>
+  <text x="235" y="232" text-anchor="end" font-size="16" fill="#111827">1</text>
+  <text x="245" y="232" font-size="16" fill="#6b7280">=</text>
+  <text x="270" y="232" font-size="16" font-weight="bold" fill="#1d4ed8">10100</text>
+  <text x="335" y="232" font-size="12" fill="#6b7280">10 → 20</text>
+
+  <!-- 行5：>> -->
+  <text x="115" y="264" text-anchor="end" font-size="16" fill="#111827">1010</text>
+  <text x="135" y="264" font-size="16" font-weight="bold" fill="#e07b00">&gt;&gt;</text>
+  <text x="235" y="264" text-anchor="end" font-size="16" fill="#111827">1</text>
+  <text x="245" y="264" font-size="16" fill="#6b7280">=</text>
+  <text x="270" y="264" font-size="16" font-weight="bold" fill="#1d4ed8">0101</text>
+  <text x="335" y="264" font-size="12" fill="#6b7280">10 → 5</text>
+</svg>

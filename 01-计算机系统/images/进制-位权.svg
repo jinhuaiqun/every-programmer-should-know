@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="220" viewBox="0 0 380 220" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">二进制 1101 是怎么变成 13 的？</text>
+
+  <rect x="40" y="50" width="64" height="44" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="72" y="78" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">1</text>
+  <rect x="116" y="50" width="64" height="44" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="148" y="78" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">1</text>
+  <rect x="192" y="50" width="64" height="44" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="224" y="78" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">0</text>
+  <rect x="268" y="50" width="64" height="44" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="300" y="78" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">1</text>
+
+  <rect x="40" y="116" width="64" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="72" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">8</text>
+  <rect x="116" y="116" width="64" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="148" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">4</text>
+  <rect x="192" y="116" width="64" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="224" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">2</text>
+  <rect x="268" y="116" width="64" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="300" y="141" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">1</text>
+
+  <text x="20" y="180" font-size="12" fill="#6b7280">每一位的权重（从右往左 1、2、4、8）</text>
+  <text x="20" y="206" font-size="14" fill="#111827">1×8 ＋ 1×4 ＋ 0×2 ＋ 1×1 ＝ <tspan font-weight="bold" fill="#1d4ed8">13</tspan></text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="230" viewBox="0 0 560 230" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrowO" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">乱码的根源：写和读用了不同的字典</text>
+
+  <rect x="40" y="55" width="80" height="48" rx="6" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+  <text x="80" y="84" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">中</text>
+  <line x1="120" y1="79" x2="330" y2="79" stroke="#e07b00" stroke-width="2" marker-end="url(#arrowO)"/>
+  <text x="225" y="70" text-anchor="middle" font-size="12" fill="#e07b00">用 GBK 字典编码</text>
+  <rect x="330" y="55" width="100" height="48" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="380" y="84" text-anchor="middle" font-size="15" fill="#1d4ed8">D6 D0</text>
+
+  <rect x="40" y="150" width="100" height="48" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="90" y="179" text-anchor="middle" font-size="15" fill="#1d4ed8">D6 D0</text>
+  <line x1="140" y1="174" x2="350" y2="174" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="245" y="165" text-anchor="middle" font-size="12" fill="#ef4444">错用 UTF-8 字典解码</text>
+  <rect x="350" y="150" width="90" height="48" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="395" y="179" text-anchor="middle" font-size="15" font-weight="bold" fill="#b91c1c">� �</text>
+
+  <text x="20" y="218" font-size="12" fill="#6b7280">同一串字节，用错了字典去读，就变成了乱码。</text>
+</svg>
