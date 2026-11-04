@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="190" viewBox="0 0 520 190" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <rect x="0" y="0" width="520" height="190" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="200" viewBox="0 0 520 200" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="30" font-size="14" font-weight="bold" fill="#1d4ed8">0.1 + 0.2 到底等于多少？</text>
 
-  <text x="20" y="30" font-size="14" font-weight="bold" fill="#111827">0.1 + 0.2 到底等于多少？</text>
+  <text x="20" y="80" font-size="15" font-weight="bold" fill="#6b7280">你以为</text>
+  <text x="110" y="80" font-size="18" font-weight="bold" fill="#1d4ed8">0.1 + 0.2 = 0.3</text>
 
-  <text x="105" y="82" text-anchor="end" font-size="18" fill="#111827">你以为：</text>
-  <text x="112" y="82" font-size="18" fill="#111827">0.1 + 0.2 = <tspan fill="#9ca3af">0.3</tspan></text>
+  <text x="20" y="124" font-size="15" font-weight="bold" fill="#1d4ed8">实际上</text>
+  <rect x="100" y="102" width="400" height="34" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="110" y="125" font-size="18" fill="#111827"><tspan font-weight="bold" fill="#1d4ed8">0.1 + 0.2 = 0.3</tspan><tspan font-weight="bold" fill="#ef4444">0000000000000004</tspan></text>
 
-  <text x="105" y="120" text-anchor="end" font-size="18" fill="#111827">实际上：</text>
-  <text x="112" y="120" font-size="18" fill="#111827">0.1 + 0.2 = <tspan fill="#1d4ed8" font-weight="bold">0.3</tspan><tspan fill="#ef4444" font-weight="bold">00000000000000004</tspan></text>
-
-  <text x="20" y="160" font-size="13" fill="#6b7280">红色那串尾巴，就是 0.1、0.2 被截断后攒出来的误差。</text>
+  <text x="20" y="172" font-size="12" fill="#6b7280">红色那串尾巴，就是 0.1、0.2 被截断后攒出来的误差。</text>
 </svg>

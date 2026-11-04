@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="280" viewBox="0 0 660 280" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">一个进程里，多条线程一起干活</text>
+
+  <rect x="30" y="50" width="600" height="200" rx="10" fill="#374151" stroke="#374151" stroke-width="2"/>
+  <text x="330" y="76" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">进程</text>
+
+  <text x="50" y="100" font-size="12" fill="#d1d5db">共享：大家用同一份</text>
+  <rect x="50" y="110" width="95" height="46" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="97" y="138" text-anchor="middle" font-size="13" fill="#111827">代码</text>
+  <rect x="155" y="110" width="95" height="46" rx="6" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="202" y="138" text-anchor="middle" font-size="13" fill="#111827">数据</text>
+  <rect x="260" y="110" width="95" height="46" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="307" y="138" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857">堆</text>
+
+  <text x="50" y="182" font-size="12" fill="#d1d5db">各自独立：每条线程一份栈</text>
+  <rect x="50" y="192" width="95" height="40" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="97" y="217" text-anchor="middle" font-size="13" font-weight="bold" fill="#c2410c">线程 1</text>
+  <rect x="155" y="192" width="60" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="185" y="217" text-anchor="middle" font-size="13" fill="#1d4ed8">栈</text>
+  <rect x="44" y="186" width="177" height="52" rx="10" fill="none" stroke="#e07b00" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <rect x="235" y="192" width="95" height="40" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="282" y="217" text-anchor="middle" font-size="13" font-weight="bold" fill="#c2410c">线程 2</text>
+  <rect x="340" y="192" width="60" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="370" y="217" text-anchor="middle" font-size="13" fill="#1d4ed8">栈</text>
+  <rect x="229" y="186" width="177" height="52" rx="10" fill="none" stroke="#e07b00" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <rect x="420" y="192" width="95" height="40" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="467" y="217" text-anchor="middle" font-size="13" font-weight="bold" fill="#c2410c">线程 3</text>
+  <rect x="525" y="192" width="60" height="40" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="555" y="217" text-anchor="middle" font-size="13" fill="#1d4ed8">栈</text>
+  <rect x="414" y="186" width="177" height="52" rx="10" fill="none" stroke="#e07b00" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <text x="20" y="270" font-size="12" fill="#6b7280">线程共享代码、数据、堆，但各带各的栈——所以能一起干活，又不互相踩。</text>
+</svg>

@@ -1,15 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="235" viewBox="0 0 560 235" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
-  <text x="20" y="28" font-size="14" font-weight="bold" fill="#111827">0.1 在二进制里是无限循环小数</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="210" viewBox="0 0 560 210" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
 
-  <text x="20" y="62" font-size="14" fill="#374151">0.1（十进制）= 二进制</text>
-  <text x="20" y="90" font-size="18" fill="#111827">0.0001100110011001100110011<tspan fill="#e07b00" font-weight="bold">……</tspan></text>
-  <text x="20" y="112" font-size="12" fill="#e07b00">「0011」这一段会一直循环，永远写不完</text>
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">0.1 在二进制里无限循环</text>
 
-  <text x="20" y="150" font-size="13" fill="#374151">计算机的尾数只有 52 位（有限），装不下 → 只能截断，尾巴丢掉</text>
+  <text x="20" y="92" font-size="20" font-weight="bold" fill="#1d4ed8">0.00011</text>
 
-  <rect x="20" y="165" width="380" height="34" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
-  <text x="210" y="187" text-anchor="middle" font-size="12" fill="#047857">前 52 位（存下来的部分）</text>
-  <text x="425" y="187" font-size="14" font-weight="bold" fill="#ef4444">→ 丢掉</text>
+  <rect x="110" y="64" width="66" height="42" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="143" y="91" text-anchor="middle" font-size="15" font-weight="bold" fill="#c2410c">0011</text>
+  <rect x="184" y="64" width="66" height="42" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="217" y="91" text-anchor="middle" font-size="15" font-weight="bold" fill="#c2410c">0011</text>
+  <rect x="258" y="64" width="66" height="42" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="291" y="91" text-anchor="middle" font-size="15" font-weight="bold" fill="#c2410c">0011</text>
+  <text x="332" y="92" font-size="20" fill="#e07b00">……</text>
 
-  <text x="20" y="222" font-size="12" fill="#6b7280">于是存进去的 0.1，是"很接近、但不完全等于 0.1"的近似值。</text>
+  <rect x="102" y="56" width="240" height="58" rx="6" fill="none" stroke="#e07b00" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="222" y1="114" x2="222" y2="138" stroke="#e07b00" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="222" y="152" text-anchor="middle" font-size="13" fill="#e07b00">「0011」这一段会一直循环</text>
+
+  <text x="20" y="188" font-size="15" fill="#374151">尾数只有 52 位，装不下 <tspan font-weight="bold" fill="#e07b00">→</tspan> <tspan font-weight="bold" fill="#ef4444">丢掉</tspan></text>
 </svg>
