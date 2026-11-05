@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">文件名是标签，inode 才是档案卡</text>
+
+  <text x="20" y="60" font-size="13" fill="#374151">目录（存文件名 → inode）</text>
+  <rect x="20" y="70" width="170" height="100" rx="8" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="35" y="98" font-size="13" fill="#1d4ed8">a.txt → inode 3</text>
+  <text x="35" y="126" font-size="13" fill="#1d4ed8">b.txt → inode 5</text>
+  <text x="35" y="154" font-size="12" fill="#6b7280">（标签）</text>
+
+  <text x="235" y="60" font-size="13" fill="#e07b00">inode（档案卡）</text>
+  <rect x="235" y="70" width="190" height="100" rx="8" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="250" y="98" font-size="13" fill="#c2410c">大小、权限、时间</text>
+  <text x="250" y="126" font-size="13" fill="#c2410c">数据在：块 42</text>
+  <text x="250" y="154" font-size="12" fill="#6b7280">（不存文件名）</text>
+
+  <text x="470" y="60" font-size="13" fill="#047857">数据块（内容）</text>
+  <rect x="470" y="70" width="150" height="100" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="485" y="100" font-size="13" font-family="ui-monospace, Consolas, monospace" fill="#047857">01101001</text>
+  <text x="485" y="128" font-size="13" font-family="ui-monospace, Consolas, monospace" fill="#047857">10110010</text>
+  <text x="485" y="156" font-size="12" fill="#6b7280">（真实内容）</text>
+
+  <line x1="190" y1="120" x2="233" y2="120" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="425" y1="120" x2="468" y2="120" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="20" y="220" font-size="12" fill="#6b7280">文件名只是标签，inode 才是文件的身份，数据块才是真正的内容。</text>
+</svg>

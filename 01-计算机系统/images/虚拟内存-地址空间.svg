@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="350" viewBox="0 0 640 350" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">每个程序都以为内存是连续的、全归自己</text>
+
+  <text x="20" y="55" font-size="13" fill="#374151">进程 A 的虚拟地址空间（连续）</text>
+  <rect x="20" y="65" width="60" height="50" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="50" y="95" text-anchor="middle" font-size="15" fill="#1d4ed8">0</text>
+  <rect x="88" y="65" width="60" height="50" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="118" y="95" text-anchor="middle" font-size="15" fill="#1d4ed8">1</text>
+  <rect x="156" y="65" width="60" height="50" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="186" y="95" text-anchor="middle" font-size="15" fill="#1d4ed8">2</text>
+  <rect x="224" y="65" width="60" height="50" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="254" y="95" text-anchor="middle" font-size="15" fill="#1d4ed8">3</text>
+
+  <text x="400" y="55" font-size="13" fill="#374151">物理内存（真实、分散）</text>
+  <rect x="400" y="65" width="120" height="240" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="415" y="80" width="90" height="45" rx="5" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="460" y="107" text-anchor="middle" font-size="13" fill="#047857">物理页框 2</text>
+  <rect x="415" y="140" width="90" height="45" rx="5" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="460" y="167" text-anchor="middle" font-size="13" fill="#047857">物理页框 0</text>
+  <rect x="415" y="200" width="90" height="45" rx="5" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="460" y="227" text-anchor="middle" font-size="13" fill="#047857">物理页框 3</text>
+  <rect x="415" y="260" width="90" height="45" rx="5" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="460" y="287" text-anchor="middle" font-size="13" fill="#047857">物理页框 1</text>
+
+  <path d="M50,115 C 200,115 300,102 415,102" fill="none" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M118,115 C 250,115 320,162 415,162" fill="none" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M186,115 C 300,115 350,222 415,222" fill="none" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M254,115 C 350,115 380,282 415,282" fill="none" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="20" y="330" font-size="12" fill="#6b7280">程序眼里连续的 0、1、2、3，实际散落在物理内存的不同位置——靠页表翻译。</text>
+</svg>

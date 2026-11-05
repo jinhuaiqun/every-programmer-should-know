@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">虚拟地址是怎么翻译成物理地址的</text>
+
+  <text x="20" y="66" font-size="13" fill="#374151">虚拟地址</text>
+  <rect x="120" y="50" width="170" height="34" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="205" y="72" text-anchor="middle" font-size="14" fill="#1d4ed8">页号 = 3</text>
+  <rect x="290" y="50" width="170" height="34" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="375" y="72" text-anchor="middle" font-size="14" fill="#111827">偏移 = 120</text>
+
+  <text x="20" y="140" font-size="13" fill="#e07b00">页表（对照表）</text>
+  <rect x="120" y="120" width="220" height="96" rx="6" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="135" y="146" font-size="13" fill="#111827">虚拟页 0 → 物理页框 5</text>
+  <text x="135" y="172" font-size="13" fill="#111827">虚拟页 1 → 物理页框 9</text>
+  <text x="135" y="198" font-size="13"><tspan font-weight="bold" fill="#1d4ed8">虚拟页 3</tspan><tspan fill="#e07b00"> → </tspan><tspan font-weight="bold" fill="#047857">物理页框 7</tspan></text>
+
+  <text x="20" y="266" font-size="13" fill="#374151">物理地址</text>
+  <rect x="120" y="250" width="170" height="34" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="205" y="272" text-anchor="middle" font-size="14" fill="#047857">物理页框号 = 7</text>
+  <rect x="290" y="250" width="170" height="34" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="375" y="272" text-anchor="middle" font-size="14" fill="#111827">偏移 = 120</text>
+
+  <path d="M205,84 L205,118" stroke="#e07b00" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M205,216 L205,248" stroke="#e07b00" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M375,84 L375,248" stroke="#9ca3af" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arrowGray)"/>
+
+  <text x="20" y="322" font-size="12" fill="#6b7280">页号要查表翻译，偏移不变、直接复制。</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="210" viewBox="0 0 640 210" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#9ca3af"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">解释 = 运行时读取程序，执行它的含义</text>
+
+  <rect x="20" y="76" width="140" height="86" rx="8" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="34" y="96" font-size="12" font-weight="bold" fill="#1d4ed8">源码 / 字节码</text>
+  <text x="34" y="118" font-size="12" font-family="ui-monospace, Consolas, monospace" fill="#1d4ed8">print(a)</text>
+  <text x="34" y="138" font-size="12" font-family="ui-monospace, Consolas, monospace" fill="#1d4ed8">print(a+b)</text>
+
+  <rect x="230" y="76" width="140" height="60" rx="8" fill="#fff7ed" stroke="#e07b00" stroke-width="1.5"/>
+  <text x="300" y="102" text-anchor="middle" font-size="14" font-weight="bold" fill="#c2410c">解释器</text>
+  <text x="300" y="122" text-anchor="middle" font-size="11" fill="#6b7280">（虚拟机：读取 + 执行）</text>
+
+  <rect x="440" y="76" width="140" height="60" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="510" y="102" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857">执行</text>
+  <text x="510" y="122" text-anchor="middle" font-size="11" fill="#6b7280">（不生成独立可执行文件）</text>
+
+  <line x1="160" y1="106" x2="226" y2="106" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="193" y="98" text-anchor="middle" font-size="11" fill="#e07b00">读取</text>
+  <line x1="370" y1="106" x2="436" y2="106" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <path d="M300,76 L300,48 L90,48 L90,74" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="4 3" fill="none" marker-end="url(#arrowGray)"/>
+  <text x="195" y="64" text-anchor="middle" font-size="11" fill="#6b7280">下一条指令</text>
+
+  <text x="20" y="200" font-size="12" fill="#6b7280">以 CPython 为例：源码先编译成字节码，再由虚拟机逐条解释执行。</text>
+</svg>
