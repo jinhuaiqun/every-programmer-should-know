@@ -24,9 +24,9 @@
   <text x="510" y="118" text-anchor="middle" font-size="13" fill="#8b5cf6">换出的页</text>
 
   <path d="M230,112 C 330,112 380,112 453,112" stroke="#e07b00" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
-  <text x="340" y="100" text-anchor="middle" font-size="12" fill="#e07b00">换出</text>
+  <text x="375" y="100" text-anchor="middle" font-size="12" fill="#e07b00">换出</text>
   <path d="M453,135 C 380,135 330,135 230,135" stroke="#e07b00" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-  <text x="340" y="150" text-anchor="middle" font-size="12" fill="#e07b00">要用时换回来</text>
+  <text x="375" y="150" text-anchor="middle" font-size="12" fill="#e07b00">要用时换回来</text>
 
   <text x="20" y="220" font-size="12" fill="#6b7280">换出 = 把不常用的页搬到磁盘；换入 = 要用时再搬回来。</text>
 </svg>
