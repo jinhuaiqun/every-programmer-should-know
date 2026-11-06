@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="190" viewBox="0 0 640 190" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">引用传递：形参是实参的别名（同一个变量）</text>
+
+  <text x="150" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">实参 x</text>
+  <text x="490" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d4ed8">形参 y</text>
+
+  <line x1="150" y1="78" x2="285" y2="100" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="490" y1="78" x2="355" y2="100" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="220" y="100" width="200" height="50" rx="6" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="320" y="130" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">同一个变量 = 5</text>
+
+  <text x="20" y="178" font-size="12" fill="#6b7280">函数里把 y 改成 999，x 也变成 999——两个名字指的是同一个变量。</text>
+</svg>
