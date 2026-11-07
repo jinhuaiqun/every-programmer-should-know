@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">作用域嵌套：内层看得到外层，外层看不到内层</text>
+
+  <rect x="40" y="52" width="480" height="218" rx="10" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="56" y="78" font-size="13" font-weight="bold" fill="#1d4ed8">全局作用域</text>
+  <text x="56" y="100" font-size="13" fill="#1d4ed8">变量 a = 1</text>
+
+  <rect x="100" y="112" width="360" height="138" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="116" y="136" font-size="13" font-weight="bold" fill="#047857">函数作用域</text>
+  <text x="116" y="158" font-size="13" fill="#047857">变量 b = 2</text>
+
+  <rect x="160" y="172" width="240" height="60" rx="10" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="176" y="194" font-size="12" font-weight="bold" fill="#7c3aed">块作用域</text>
+  <text x="176" y="214" font-size="12" fill="#7c3aed">变量 c = 3</text>
+
+  <text x="40" y="286" font-size="12" fill="#6b7280">最内层（块）能用 a、b、c；全局只能用 a，看不到 b、c。</text>
+</svg>

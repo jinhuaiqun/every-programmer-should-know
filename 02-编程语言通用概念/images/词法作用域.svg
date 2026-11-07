@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="300" viewBox="0 0 620 300" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">词法作用域 vs 动态作用域：同一个 show，读到不同的 x</text>
+
+  <rect x="20" y="54" width="290" height="200" rx="8" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="36" y="78" font-size="13" font-weight="bold" fill="#1d4ed8">词法作用域（看定义在哪）</text>
+  <text x="36" y="106" font-size="13" fill="#1d4ed8">全局：x = 10</text>
+  <text x="36" y="128" font-size="12" fill="#6b7280">show() 定义在这里 ↓</text>
+  <text x="36" y="152" font-size="13" fill="#1d4ed8">run()：x = 20，调用 show()</text>
+  <rect x="36" y="170" width="238" height="34" rx="6" fill="#3b82f6"/>
+  <text x="155" y="192" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">show 读到的 x = 10</text>
+
+  <rect x="330" y="54" width="270" height="200" rx="8" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="346" y="78" font-size="13" font-weight="bold" fill="#7c3aed">动态作用域（看谁调用）</text>
+  <text x="346" y="106" font-size="13" fill="#7c3aed">调用栈：run → show</text>
+  <text x="346" y="128" font-size="12" fill="#6b7280">show 沿调用栈往上找 x</text>
+  <text x="346" y="152" font-size="13" fill="#7c3aed">run 里有 x = 20</text>
+  <rect x="346" y="170" width="214" height="34" rx="6" fill="#8b5cf6"/>
+  <text x="453" y="192" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">show 读到的 x = 20</text>
+
+  <text x="20" y="272" font-size="12" fill="#6b7280">词法作用域按「代码写在哪」找变量（主流语言都这样）；</text>
+  <text x="20" y="292" font-size="12" fill="#6b7280">动态作用域按「运行时谁调用」找（老 Lisp、bash 部分如此）。</text>
+</svg>
