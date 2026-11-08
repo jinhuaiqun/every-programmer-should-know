@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="310" viewBox="0 0 640 310" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">对比：面向对象改状态 vs 函数式不改状态</text>
+
+  <rect x="20" y="48" width="290" height="220" rx="8" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="165" y="74" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">面向对象：对象自带状态</text>
+  <rect x="55" y="92" width="220" height="72" rx="6" fill="#ffffff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="165" y="114" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">对象</text>
+  <text x="165" y="134" font-size="12" fill="#374151" text-anchor="middle">状态 count = 0</text>
+  <text x="165" y="152" font-size="12" fill="#374151" text-anchor="middle">方法 increment()</text>
+  <text x="165" y="190" font-size="12" fill="#6b7280" text-anchor="middle">调用 increment() ↓</text>
+  <text x="165" y="212" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">count 变成 1（状态被改了）</text>
+
+  <rect x="330" y="48" width="290" height="220" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="475" y="74" font-size="13" font-weight="bold" fill="#047857" text-anchor="middle">函数式：数据流过函数</text>
+  <rect x="340" y="104" width="64" height="44" rx="6" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="372" y="130" font-size="12" fill="#374151" text-anchor="middle">count=0</text>
+  <line x1="404" y1="126" x2="428" y2="126" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="430" y="104" width="76" height="44" rx="6" fill="#10b981"/>
+  <text x="468" y="130" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">increment</text>
+  <line x1="506" y1="126" x2="530" y2="126" stroke="#10b981" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="532" y="104" width="64" height="44" rx="6" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="564" y="130" font-size="12" fill="#374151" text-anchor="middle">count=1</text>
+  <text x="475" y="190" font-size="12" font-weight="bold" fill="#047857" text-anchor="middle">→ 产生新值 count=1</text>
+  <text x="475" y="212" font-size="12" fill="#374151" text-anchor="middle">原来的 count=0 没动</text>
+
+  <text x="20" y="296" font-size="12" fill="#6b7280">OOP 让对象改自己的状态；FP 不改原数据、只产生新数据——这是两者最核心的区别。</text>
+</svg>

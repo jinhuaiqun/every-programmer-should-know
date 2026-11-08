@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">对比：黑箱子（Object） vs 贴标签的盒子（Box&lt;String&gt;）</text>
+
+  <rect x="20" y="52" width="290" height="230" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="165" y="78" font-size="13" font-weight="bold" fill="#b91c1c" text-anchor="middle">不用泛型：黑箱子 Object</text>
+  <rect x="85" y="96" width="160" height="44" rx="6" fill="#374151"/>
+  <text x="165" y="118" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">黑箱子</text>
+  <text x="165" y="134" font-size="11" fill="#9ca3af" text-anchor="middle">Object</text>
+  <text x="40" y="170" font-size="12" fill="#6b7280">装东西：什么都能装</text>
+  <text x="40" y="192" font-size="12" fill="#6b7280">拿出来：编译器只当它是 Object</text>
+  <text x="40" y="214" font-size="12" fill="#6b7280">要手动强转 (String)</text>
+  <text x="40" y="246" font-size="12" font-weight="bold" fill="#b91c1c">强转错了 → 运行时崩溃</text>
+
+  <rect x="330" y="52" width="290" height="230" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="475" y="78" font-size="13" font-weight="bold" fill="#047857" text-anchor="middle">用泛型：贴标签 Box&lt;String&gt;</text>
+  <rect x="395" y="96" width="160" height="44" rx="6" fill="#10b981"/>
+  <text x="475" y="118" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">贴标签</text>
+  <text x="475" y="134" font-size="11" fill="#ecfdf5" text-anchor="middle">Box&lt;String&gt;</text>
+  <text x="350" y="170" font-size="12" fill="#6b7280">装东西：只放行 String</text>
+  <text x="350" y="192" font-size="12" fill="#6b7280">拿出来：直接就是 String</text>
+  <text x="350" y="214" font-size="12" fill="#6b7280">不用强转</text>
+  <text x="350" y="246" font-size="12" font-weight="bold" fill="#047857">装错 → 编译期就报错</text>
+
+  <text x="20" y="308" font-size="12" fill="#6b7280">泛型把「运行时强转才暴露的错误」提前到「编译期」就拦住。</text>
+</svg>

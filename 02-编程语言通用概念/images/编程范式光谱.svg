@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="190" viewBox="0 0 640 190" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">从面向对象到函数式：语言在一条光谱上</text>
+
+  <text x="40" y="70" font-size="13" font-weight="bold" fill="#1d4ed8">面向对象</text>
+  <text x="600" y="70" font-size="13" font-weight="bold" fill="#047857" text-anchor="end">函数式</text>
+
+  <line x1="40" y1="90" x2="594" y2="90" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <circle cx="100" cy="90" r="5" fill="#3b82f6"/>
+  <text x="100" y="120" font-size="12" fill="#374151" text-anchor="middle">Java、C#（偏面向对象）</text>
+
+  <circle cx="250" cy="90" r="5" fill="#6b7280"/>
+  <text x="250" y="120" font-size="12" fill="#374151" text-anchor="middle">Python、JS（中间）</text>
+
+  <circle cx="400" cy="90" r="5" fill="#059669"/>
+  <text x="400" y="120" font-size="12" fill="#374151" text-anchor="middle">Kotlin、Scala（偏函数式）</text>
+
+  <circle cx="540" cy="90" r="5" fill="#10b981"/>
+  <text x="540" y="120" font-size="12" fill="#374151" text-anchor="middle">Haskell（纯函数式）</text>
+
+  <text x="20" y="170" font-size="12" fill="#6b7280">现代语言大多落在中间，两个范式混着用，不站队。</text>
+</svg>
