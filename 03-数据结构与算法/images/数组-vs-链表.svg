@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="310" viewBox="0 0 640 310" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">数组：连号内存，一步到位 vs 链表：指针串联，逐个找</text>
+
+  <rect x="20" y="48" width="290" height="210" rx="8" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="165" y="74" font-size="13" font-weight="bold" fill="#1d4ed8" text-anchor="middle">数组</text>
+
+  <rect x="46" y="92" width="58" height="40" rx="4" fill="#3b82f6"/>
+  <text x="75" y="117" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">10</text>
+  <rect x="106" y="92" width="58" height="40" rx="4" fill="#3b82f6"/>
+  <text x="135" y="117" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">20</text>
+  <rect x="166" y="92" width="58" height="40" rx="4" fill="#3b82f6"/>
+  <text x="195" y="117" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">30</text>
+  <rect x="226" y="92" width="58" height="40" rx="4" fill="#3b82f6"/>
+  <text x="255" y="117" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">40</text>
+
+  <text x="75" y="152" font-size="11" fill="#6b7280" text-anchor="middle">下标 0</text>
+  <text x="135" y="152" font-size="11" fill="#6b7280" text-anchor="middle">下标 1</text>
+  <text x="195" y="152" font-size="11" fill="#6b7280" text-anchor="middle">下标 2</text>
+  <text x="255" y="152" font-size="11" fill="#6b7280" text-anchor="middle">下标 3</text>
+
+  <text x="165" y="186" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">按下标访问 O(1)：地址一算就到</text>
+  <text x="165" y="208" font-size="12" fill="#6b7280" text-anchor="middle">中间增删 O(n)：后面全得挪</text>
+
+  <rect x="330" y="48" width="290" height="210" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="475" y="74" font-size="13" font-weight="bold" fill="#047857" text-anchor="middle">链表</text>
+
+  <rect x="367" y="110" width="56" height="40" rx="4" fill="#10b981"/>
+  <text x="395" y="135" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">A</text>
+  <line x1="423" y1="130" x2="445" y2="130" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="447" y="110" width="56" height="40" rx="4" fill="#10b981"/>
+  <text x="475" y="135" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">B</text>
+  <line x1="503" y1="130" x2="525" y2="130" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="527" y="110" width="56" height="40" rx="4" fill="#10b981"/>
+  <text x="555" y="135" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">C</text>
+
+  <text x="475" y="186" font-size="12" font-weight="bold" fill="#047857" text-anchor="middle">已知位置增删 O(1)：改指针就行</text>
+  <text x="475" y="208" font-size="12" fill="#6b7280" text-anchor="middle">按位置访问 O(n)：得从头找</text>
+
+  <text x="20" y="296" font-size="12" fill="#6b7280">数组按下标访问快，链表在已知位置增删快——差别在「连续内存」还是「指针串联」。</text>
+</svg>
