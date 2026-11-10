@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="14" font-weight="bold" fill="#1d4ed8">大 O：比的是增长趋势，不是精确时间</text>
+
+  <!-- 坐标轴 -->
+  <line x1="80" y1="320" x2="610" y2="320" stroke="#6b7280" stroke-width="1.5"/>
+  <line x1="80" y1="320" x2="80" y2="60" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="610,320 600,316 600,324" fill="#6b7280"/>
+  <polygon points="80,60 76,70 84,70" fill="#6b7280"/>
+  <text x="606" y="336" font-size="11" fill="#6b7280" text-anchor="end">n（输入规模）</text>
+  <text x="72" y="58" font-size="11" fill="#6b7280" text-anchor="end">操作数</text>
+
+  <!-- O(1)：常数，不随 n 增长 -->
+  <line x1="80" y1="314" x2="610" y2="314" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="301" font-size="11" font-weight="bold" fill="#10b981" text-anchor="end">O(1)</text>
+
+  <!-- O(log n)：先快后平 -->
+  <path d="M80,320 C180,300 400,290 610,282" fill="none" stroke="#06b6d4" stroke-width="2"/>
+  <text x="600" y="269" font-size="11" font-weight="bold" fill="#06b6d4" text-anchor="end">O(log n)</text>
+
+  <!-- O(n)：直线 -->
+  <path d="M80,320 L610,220" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="207" font-size="11" font-weight="bold" fill="#3b82f6" text-anchor="end">O(n)</text>
+
+  <!-- O(n log n)：比 n 略陡 -->
+  <path d="M80,320 C220,296 430,248 610,176" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="163" font-size="11" font-weight="bold" fill="#f59e0b" text-anchor="end">O(n log n)</text>
+
+  <!-- O(n²)：抛物线，前半段就甩开下面的线 -->
+  <path d="M80,320 C200,312 320,230 430,62" fill="none" stroke="#ea580c" stroke-width="2"/>
+  <text x="360" y="120" font-size="11" font-weight="bold" fill="#ea580c" text-anchor="middle">O(n²)</text>
+
+  <!-- O(2ⁿ)：指数爆炸，更早冲出图外 -->
+  <path d="M80,320 C170,310 250,200 320,62" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <text x="250" y="120" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">O(2ⁿ)</text>
+
+  <text x="320" y="350" font-size="12" fill="#6b7280" text-anchor="middle">n 越大，趋势越决定一切：O(n²)、O(2ⁿ) 前半段就甩开其他，很快冲出图外。</text>
+</svg>
