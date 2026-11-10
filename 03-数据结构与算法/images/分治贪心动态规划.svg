@@ -27,8 +27,8 @@
   <line x1="158" y1="134" x2="215" y2="157" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
   <line x1="100" y1="192" x2="138" y2="219" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
   <line x1="215" y1="192" x2="178" y2="219" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="158" y="278" font-size="13" fill="#374151" text-anchor="middle">子问题独立，各解再合并</text>
-  <text x="158" y="300" font-size="12" fill="#6b7280" text-anchor="middle">例：归并排序、快速排序</text>
+  <text x="158" y="278" font-size="13" fill="#4b5563" text-anchor="middle">子问题独立，各解再合并</text>
+  <text x="158" y="300" font-size="12" fill="#9ca3af" text-anchor="middle">例：归并排序、快速排序</text>
 
   <!-- 中：贪心 -->
   <text x="385" y="86" font-size="15" font-weight="bold" fill="#10b981" text-anchor="middle">贪心</text>
@@ -37,8 +37,8 @@
   <circle cx="360" cy="160" r="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
   <circle cx="405" cy="185" r="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
   <circle cx="450" cy="160" r="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
-  <text x="385" y="278" font-size="13" fill="#374151" text-anchor="middle">每步选眼前最好，不回头</text>
-  <text x="385" y="300" font-size="12" fill="#6b7280" text-anchor="middle">例：找零钱</text>
+  <text x="385" y="278" font-size="13" fill="#4b5563" text-anchor="middle">每步选眼前最好，不回头</text>
+  <text x="385" y="300" font-size="12" fill="#9ca3af" text-anchor="middle">例：找零钱</text>
 
   <!-- 右：动态规划 -->
   <text x="605" y="86" font-size="15" font-weight="bold" fill="#f59e0b" text-anchor="middle">动态规划</text>
@@ -56,6 +56,6 @@
   <path d="M 582 210 Q 605 178 628 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
   <path d="M 582 210 Q 628 120 674 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
   <path d="M 628 210 Q 651 178 674 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
-  <text x="605" y="278" font-size="13" fill="#374151" text-anchor="middle">子问题重叠，填表记下</text>
-  <text x="605" y="300" font-size="12" fill="#6b7280" text-anchor="middle">例：斐波那契、背包</text>
+  <text x="605" y="278" font-size="13" fill="#4b5563" text-anchor="middle">子问题重叠，填表记下</text>
+  <text x="605" y="300" font-size="12" fill="#9ca3af" text-anchor="middle">例：斐波那契、背包</text>
 </svg>
