@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="15" font-weight="bold" fill="#1d4ed8">二分查找：每次都砍掉一半（在有序数组里找 31）</text>
+
+  <!-- 第 1 步 -->
+  <rect x="150" y="60" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="177" y="86" font-size="15" fill="#6b7280" text-anchor="middle">3</text>
+  <rect x="206" y="60" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="233" y="86" font-size="15" fill="#6b7280" text-anchor="middle">8</text>
+  <rect x="262" y="60" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="289" y="86" font-size="15" fill="#6b7280" text-anchor="middle">15</text>
+  <rect x="318" y="60" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#e07b00" stroke-width="2.5"/>
+  <text x="345" y="86" font-size="15" font-weight="bold" fill="#c2410c" text-anchor="middle">22</text>
+  <rect x="374" y="60" width="54" height="38" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="401" y="86" font-size="15" fill="#1d4ed8" text-anchor="middle">31</text>
+  <rect x="430" y="60" width="54" height="38" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="457" y="86" font-size="15" fill="#1d4ed8" text-anchor="middle">45</text>
+  <rect x="486" y="60" width="54" height="38" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="513" y="86" font-size="15" fill="#1d4ed8" text-anchor="middle">60</text>
+  <rect x="542" y="60" width="54" height="38" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="569" y="86" font-size="15" fill="#1d4ed8" text-anchor="middle">77</text>
+  <text x="150" y="118" font-size="12" fill="#6b7280">第 1 步：mid=22 &lt; 31，目标在右边，砍掉左半边（蓝色 = 还剩下）</text>
+
+  <!-- 第 2 步 -->
+  <rect x="150" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="177" y="166" font-size="15" fill="#6b7280" text-anchor="middle">3</text>
+  <rect x="206" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="233" y="166" font-size="15" fill="#6b7280" text-anchor="middle">8</text>
+  <rect x="262" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="289" y="166" font-size="15" fill="#6b7280" text-anchor="middle">15</text>
+  <rect x="318" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="345" y="166" font-size="15" fill="#6b7280" text-anchor="middle">22</text>
+  <rect x="374" y="140" width="54" height="38" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="401" y="166" font-size="15" fill="#1d4ed8" text-anchor="middle">31</text>
+  <rect x="430" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#e07b00" stroke-width="2.5"/>
+  <text x="457" y="166" font-size="15" font-weight="bold" fill="#c2410c" text-anchor="middle">45</text>
+  <rect x="486" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="513" y="166" font-size="15" fill="#6b7280" text-anchor="middle">60</text>
+  <rect x="542" y="140" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="569" y="166" font-size="15" fill="#6b7280" text-anchor="middle">77</text>
+  <text x="150" y="198" font-size="12" fill="#6b7280">第 2 步：mid=45 &gt; 31，目标在左边，砍掉右半边</text>
+
+  <!-- 第 3 步 -->
+  <rect x="150" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="177" y="246" font-size="15" fill="#6b7280" text-anchor="middle">3</text>
+  <rect x="206" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="233" y="246" font-size="15" fill="#6b7280" text-anchor="middle">8</text>
+  <rect x="262" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="289" y="246" font-size="15" fill="#6b7280" text-anchor="middle">15</text>
+  <rect x="318" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="345" y="246" font-size="15" fill="#6b7280" text-anchor="middle">22</text>
+  <rect x="374" y="220" width="54" height="38" rx="4" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="401" y="246" font-size="15" font-weight="bold" fill="#047857" text-anchor="middle">31</text>
+  <rect x="430" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="457" y="246" font-size="15" fill="#6b7280" text-anchor="middle">45</text>
+  <rect x="486" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="513" y="246" font-size="15" fill="#6b7280" text-anchor="middle">60</text>
+  <rect x="542" y="220" width="54" height="38" rx="4" fill="#e5e7eb" stroke="#9ca3af"/>
+  <text x="569" y="246" font-size="15" fill="#6b7280" text-anchor="middle">77</text>
+  <text x="150" y="278" font-size="12" fill="#6b7280">第 3 步：mid=31，就是它 → 找到 ✓</text>
+
+  <text x="320" y="330" font-size="13" fill="#374151" text-anchor="middle">8 个元素最多砍 3 次（log₂8）；10 亿个元素也只要约 30 次——这就是 O(log n) 的威力。</text>
+</svg>

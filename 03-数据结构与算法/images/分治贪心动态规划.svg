@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="340" viewBox="0 0 760 340" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+    <marker id="arrowg" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowdp" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="30" font-size="16" font-weight="bold" fill="#1d4ed8">分治 · 贪心 · 动态规划：三种「拆问题」的思路</text>
+
+  <!-- 左：分治 -->
+  <text x="158" y="86" font-size="15" font-weight="bold" fill="#3b82f6" text-anchor="middle">分治</text>
+  <rect x="108" y="102" width="100" height="32" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="158" y="124" font-size="13" fill="#1d4ed8" text-anchor="middle">大问题</text>
+  <rect x="63" y="160" width="75" height="32" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="100" y="182" font-size="12" fill="#1d4ed8" text-anchor="middle">子问题</text>
+  <rect x="178" y="160" width="75" height="32" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="215" y="182" font-size="12" fill="#1d4ed8" text-anchor="middle">子问题</text>
+  <rect x="108" y="222" width="100" height="32" rx="4" fill="#eef4ff" stroke="#3b82f6"/>
+  <text x="158" y="244" font-size="12" fill="#1d4ed8" text-anchor="middle">合并答案</text>
+  <line x1="158" y1="134" x2="100" y2="157" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="158" y1="134" x2="215" y2="157" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="100" y1="192" x2="138" y2="219" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="215" y1="192" x2="178" y2="219" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="158" y="278" font-size="13" fill="#374151" text-anchor="middle">子问题独立，各解再合并</text>
+  <text x="158" y="300" font-size="12" fill="#6b7280" text-anchor="middle">例：归并排序、快速排序</text>
+
+  <!-- 中：贪心 -->
+  <text x="385" y="86" font-size="15" font-weight="bold" fill="#10b981" text-anchor="middle">贪心</text>
+  <polyline points="315,185 360,160 405,185 450,160 458,160" fill="none" stroke="#10b981" stroke-width="2" marker-end="url(#arrowg)"/>
+  <circle cx="315" cy="185" r="5" fill="#10b981"/>
+  <circle cx="360" cy="160" r="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="405" cy="185" r="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <circle cx="450" cy="160" r="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
+  <text x="385" y="278" font-size="13" fill="#374151" text-anchor="middle">每步选眼前最好，不回头</text>
+  <text x="385" y="300" font-size="12" fill="#6b7280" text-anchor="middle">例：找零钱</text>
+
+  <!-- 右：动态规划 -->
+  <text x="605" y="86" font-size="15" font-weight="bold" fill="#f59e0b" text-anchor="middle">动态规划</text>
+  <text x="605" y="128" font-size="12" fill="#9a3412" text-anchor="middle">f(n) = f(n-1) + f(n-2)</text>
+  <rect x="518" y="210" width="36" height="36" rx="4" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="536" y="233" font-size="13" fill="#c2410c" text-anchor="middle">f(1)</text>
+  <rect x="564" y="210" width="36" height="36" rx="4" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="582" y="233" font-size="13" fill="#c2410c" text-anchor="middle">f(2)</text>
+  <rect x="610" y="210" width="36" height="36" rx="4" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="628" y="233" font-size="13" fill="#c2410c" text-anchor="middle">f(3)</text>
+  <rect x="656" y="210" width="36" height="36" rx="4" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="674" y="233" font-size="13" fill="#c2410c" text-anchor="middle">f(4)</text>
+  <!-- 依赖箭头：f(3) 依赖 f(1)、f(2)；f(4) 依赖 f(2)、f(3)。f(2) 有两条出去的箭头 = 被复用两次 -->
+  <path d="M 536 210 Q 582 142 628 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
+  <path d="M 582 210 Q 605 178 628 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
+  <path d="M 582 210 Q 628 120 674 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
+  <path d="M 628 210 Q 651 178 674 210" fill="none" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#arrowdp)"/>
+  <text x="605" y="278" font-size="13" fill="#374151" text-anchor="middle">子问题重叠，填表记下</text>
+  <text x="605" y="300" font-size="12" fill="#6b7280" text-anchor="middle">例：斐波那契、背包</text>
+</svg>

@@ -7,7 +7,7 @@
   <polygon points="610,320 600,316 600,324" fill="#6b7280"/>
   <polygon points="80,60 76,70 84,70" fill="#6b7280"/>
   <text x="606" y="338" font-size="12" fill="#6b7280" text-anchor="end">n（输入规模）</text>
-  <text x="72" y="58" font-size="12" fill="#6b7280" text-anchor="end">时间</text>
+  <text x="72" y="73" font-size="12" fill="#6b7280" text-anchor="end">时间</text>
 
   <!-- O(1)：常数，不随 n 增长 -->
   <line x1="80" y1="306" x2="610" y2="306" stroke="#10b981" stroke-width="2"/>
