@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="340" viewBox="0 0 640 340" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="15" font-weight="bold" fill="#1d4ed8">隔离级别：四档，从「宽松」到「严格」</text>
+  <text x="20" y="50" font-size="11" fill="#6b7280">（从下到上，隔离越来越严格、越来越安全）</text>
+
+  <!-- SERIALIZABLE（最严格，绿） -->
+  <rect x="60" y="72" width="460" height="48" rx="5" fill="#10b981"/>
+  <text x="78" y="94" font-size="12.5" font-weight="bold" fill="#ffffff">SERIALIZABLE（串行化）</text>
+  <text x="78" y="112" font-size="11" fill="#ffffff">最严格：脏读、不可重复读、幻读全避免</text>
+
+  <!-- REPEATABLE READ（蓝） -->
+  <rect x="60" y="132" width="460" height="48" rx="5" fill="#3b82f6"/>
+  <text x="78" y="154" font-size="12.5" font-weight="bold" fill="#ffffff">REPEATABLE READ（可重复读）</text>
+  <text x="78" y="172" font-size="11" fill="#ffffff">再避免不可重复读，同一事务两次读一致</text>
+
+  <!-- READ COMMITTED（橙） -->
+  <rect x="60" y="192" width="460" height="48" rx="5" fill="#f59e0b"/>
+  <text x="78" y="214" font-size="12.5" font-weight="bold" fill="#ffffff">READ COMMITTED（读已提交）</text>
+  <text x="78" y="232" font-size="11" fill="#ffffff">避免脏读，只读别人已提交的数据</text>
+
+  <!-- READ UNCOMMITTED（最宽松，红） -->
+  <rect x="60" y="252" width="460" height="48" rx="5" fill="#ef4444"/>
+  <text x="78" y="274" font-size="12.5" font-weight="bold" fill="#ffffff">READ UNCOMMITTED（读未提交）</text>
+  <text x="78" y="292" font-size="11" fill="#ffffff">最宽松：脏读、不可重复读、幻读都可能</text>
+
+  <text x="320" y="322" font-size="12" fill="#4b5563" text-anchor="middle">隔离越强越安全，但并发性能开销越大；不同数据库默认级别不同</text>
+</svg>

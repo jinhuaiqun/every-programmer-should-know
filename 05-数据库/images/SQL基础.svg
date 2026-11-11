@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="20" y="28" font-size="15" font-weight="bold" fill="#1d4ed8">SQL：先 FROM 选表，再 WHERE 筛行，最后 SELECT 挑列</text>
+
+  <text x="20" y="54" font-size="13">
+    <tspan fill="#047857" font-weight="bold">SELECT</tspan>
+    <tspan fill="#4b5563"> 姓名, 金额 </tspan>
+    <tspan fill="#1d4ed8" font-weight="bold">FROM</tspan>
+    <tspan fill="#4b5563"> 订单 </tspan>
+    <tspan fill="#e07b00" font-weight="bold">WHERE</tspan>
+    <tspan fill="#4b5563"> 金额 &gt; 100</tspan>
+  </text>
+
+  <!-- 订单表 -->
+  <rect x="200" y="78" width="320" height="150" rx="5" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="360" y="96" font-size="12" font-weight="bold" fill="#1d4ed8" text-anchor="middle">订单表</text>
+  <line x1="208" y1="104" x2="512" y2="104" stroke="#3b82f6" stroke-width="0.8"/>
+  <line x1="300" y1="104" x2="300" y2="228" stroke="#3b82f6" stroke-width="0.8"/>
+  <line x1="400" y1="104" x2="400" y2="228" stroke="#3b82f6" stroke-width="0.8"/>
+
+  <text x="250" y="120" font-size="11" font-weight="bold" fill="#047857" text-anchor="middle">姓名</text>
+  <text x="350" y="120" font-size="11" font-weight="bold" fill="#047857" text-anchor="middle">金额</text>
+  <text x="450" y="120" font-size="11" font-weight="bold" fill="#9ca3af" text-anchor="middle">城市</text>
+  <line x1="208" y1="128" x2="512" y2="128" stroke="#3b82f6" stroke-width="0.8"/>
+
+  <text x="250" y="150" font-size="12" fill="#4b5563" text-anchor="middle">张三</text>
+  <text x="350" y="150" font-size="12" fill="#4b5563" text-anchor="middle">120</text>
+  <text x="450" y="150" font-size="12" fill="#9ca3af" text-anchor="middle">北京</text>
+  <line x1="208" y1="162" x2="512" y2="162" stroke="#3b82f6" stroke-width="0.8"/>
+
+  <text x="250" y="174" font-size="12" fill="#9ca3af" text-anchor="middle">李四</text>
+  <text x="350" y="174" font-size="12" fill="#9ca3af" text-anchor="middle">80</text>
+  <text x="450" y="174" font-size="12" fill="#9ca3af" text-anchor="middle">上海</text>
+  <line x1="208" y1="170" x2="512" y2="170" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="208" y1="186" x2="512" y2="186" stroke="#3b82f6" stroke-width="0.8"/>
+
+  <text x="250" y="198" font-size="12" fill="#4b5563" text-anchor="middle">王五</text>
+  <text x="350" y="198" font-size="12" fill="#4b5563" text-anchor="middle">200</text>
+  <text x="450" y="198" font-size="12" fill="#9ca3af" text-anchor="middle">北京</text>
+
+  <!-- 图例 -->
+  <rect x="20" y="250" width="14" height="14" rx="3" fill="#10b981"/>
+  <text x="42" y="262" font-size="11.5" fill="#4b5563">SELECT 挑列</text>
+  <rect x="150" y="250" width="14" height="14" rx="3" fill="#3b82f6"/>
+  <text x="172" y="262" font-size="11.5" fill="#4b5563">FROM 选表</text>
+  <rect x="270" y="250" width="14" height="14" rx="3" fill="#e07b00"/>
+  <text x="292" y="262" font-size="11.5" fill="#4b5563">WHERE 筛行</text>
+
+  <text x="320" y="300" font-size="12" fill="#4b5563" text-anchor="middle">SQL 是声明式语言——你说「要什么」，数据库自己决定「怎么取」（点菜，而不是教它炒菜）</text>
+</svg>
