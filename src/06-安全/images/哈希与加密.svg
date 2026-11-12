@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="28" font-size="15" font-weight="bold" fill="#1d4ed8">哈希 vs 加密：哈希是「单向门」，加密是「能开锁的箱子」</text>
+
+  <!-- 哈希（单向） -->
+  <text x="20" y="56" font-size="13" font-weight="bold" fill="#1d4ed8">哈希（单向）</text>
+  <rect x="20" y="68" width="150" height="44" rx="5" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="95" y="95" font-size="12" fill="#4b5563" text-anchor="middle">密码 123456</text>
+  <line x1="170" y1="90" x2="226" y2="90" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="198" y="82" font-size="11" fill="#e07b00" text-anchor="middle">哈希</text>
+  <rect x="230" y="68" width="150" height="44" rx="5" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="305" y="95" font-size="11" fill="#4b5563" text-anchor="middle">d8e8fca2…（指纹）</text>
+  <text x="400" y="95" font-size="11.5" fill="#4b5563">不可逆：只能算出指纹，回不去原文</text>
+
+  <!-- 加密（双向） -->
+  <text x="20" y="148" font-size="13" font-weight="bold" fill="#047857">加密（双向）</text>
+  <rect x="20" y="160" width="150" height="44" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="95" y="187" font-size="12" fill="#4b5563" text-anchor="middle">密码 123456</text>
+  <line x1="170" y1="182" x2="226" y2="182" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="198" y="174" font-size="11" fill="#e07b00" text-anchor="middle">加密</text>
+  <line x1="226" y1="196" x2="170" y2="196" stroke="#e07b00" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="198" y="210" font-size="11" fill="#e07b00" text-anchor="middle">解密</text>
+  <rect x="230" y="160" width="150" height="44" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="305" y="187" font-size="11" fill="#4b5563" text-anchor="middle">X#k9!pQ（密文）</text>
+  <text x="400" y="187" font-size="11.5" fill="#4b5563">可逆：有密钥就能解密还原</text>
+
+  <text x="320" y="250" font-size="12" fill="#4b5563" text-anchor="middle">存密码该用「加盐 + 慢哈希」——验证密码不需要还原原文，单向反而更安全</text>
+</svg>

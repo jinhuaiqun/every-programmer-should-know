@@ -1,0 +1,12 @@
+[book]
+title = "每个程序员都应该知道的重要概念"
+authors = ["jinhuaiqun"]
+description = "讲清楚那些每个程序员都该懂的、最基本也最重要的概念，帮助建立计算机技术直觉。"
+language = "zh"
+src = "src"
+
+[build]
+build-dir = "book"
+
+[output.html]
+git-repository-url = "https://github.com/jinhuaiqun/every-programmer-should-know"
