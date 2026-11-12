@@ -44,5 +44,5 @@
 
   <text x="320" y="250" font-size="11.5" fill="#4b5563" text-anchor="middle">传递依赖：项目 → 库 A → 库 B → 库 C，一层套一层</text>
 
-  <text x="320" y="285" font-size="12" fill="#4b5563" text-anchor="middle">锁文件锁定精确版本，保证可复现；小心依赖冲突</text>
+  <text x="320" y="285" font-size="12" fill="#4b5563" text-anchor="middle">锁文件锁定精确版本，提高可复现；小心依赖冲突</text>
 </svg>
