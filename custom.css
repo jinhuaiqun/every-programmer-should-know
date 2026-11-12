@@ -1,0 +1,6 @@
+/* 覆盖 mdBook 默认的 1.45em，中文正文用更舒适的行距 */
+.content p,
+.content ol,
+.content ul {
+  line-height: 1.7;
+}
