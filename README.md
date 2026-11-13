@@ -3,7 +3,7 @@
 讲清楚那些每个程序员都该懂的、最基本也最重要的概念。
 目标不只是解释计算机名词，还要帮助程序员建立计算机技术直觉。
 
-📖 在线阅读（GitHub Pages）：<https://jinhuaiqun.github.io/every-programmer-should-know/>
+这是一个在线电子书项目，[在线阅读请点击这里](https://jinhuaiqun.github.io/every-programmer-should-know/)。
 
 ## 为什么读这个
 
