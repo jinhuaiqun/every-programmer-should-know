@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="300" viewBox="0 0 540 300" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="270" y="36" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">抽象：你只碰「接口」，复杂的「实现」被藏起来了</text>
+
+  <rect x="20" y="68" width="240" height="172" rx="10" fill="#eef4ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="140" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">接口（你只碰这些）</text>
+  <text x="140" y="140" text-anchor="middle" font-size="13" fill="#111827">方向盘</text>
+  <text x="140" y="172" text-anchor="middle" font-size="13" fill="#111827">油门、刹车</text>
+  <text x="140" y="206" text-anchor="middle" font-size="12" fill="#6b7280">只关心「能做什么」</text>
+
+  <rect x="280" y="68" width="240" height="172" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857">实现（被藏起来了）</text>
+  <text x="400" y="140" text-anchor="middle" font-size="13" fill="#111827">发动机怎么点火</text>
+  <text x="400" y="172" text-anchor="middle" font-size="13" fill="#111827">变速箱怎么换挡</text>
+  <text x="400" y="206" text-anchor="middle" font-size="12" fill="#6b7280">不用管「怎么做」</text>
+
+  <text x="270" y="276" text-anchor="middle" font-size="13" fill="#6b7280">只要接口不变，实现怎么换都行——发动机换成电动的，方向盘照样用。</text>
+</svg>

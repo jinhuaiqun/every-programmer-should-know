@@ -96,8 +96,8 @@
 
 > 不属于任何具体领域，而是横贯前面所有领域的思想。
 
-- ★ 抽象（Abstraction）
-- ★ 分层（Layering）
+- ★ [抽象（Abstraction）](src/08-通用设计思想/01-抽象.md)
+- ★ [分层（Layering）](src/08-通用设计思想/02-分层.md)
 - ★ 分治（Divide & Conquer）
 - ★ 机制与策略分离（Mechanism vs Policy）
 - ★ 并发（Concurrency）——竞态条件、锁、死锁、同步/异步、事件循环

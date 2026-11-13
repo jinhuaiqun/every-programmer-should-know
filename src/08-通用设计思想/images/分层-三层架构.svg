@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="380" viewBox="0 0 540 380" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="down" markerWidth="10" markerHeight="10" refX="5" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 1 0 L 5 8 L 9 0 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <text x="270" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">分层：每层只干自己的事，只跟相邻层打交道</text>
+
+  <rect x="100" y="66" width="340" height="54" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="124" y="96" font-size="14" font-weight="bold" fill="#1d4ed8">表现层（界面）</text>
+  <text x="416" y="96" text-anchor="end" font-size="12" fill="#374151">只管展示</text>
+
+  <line x1="270" y1="122" x2="270" y2="136" stroke="#6b7280" stroke-width="2" marker-end="url(#down)"/>
+
+  <rect x="100" y="138" width="340" height="54" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="124" y="168" font-size="14" font-weight="bold" fill="#1d4ed8">业务逻辑层</text>
+  <text x="416" y="168" text-anchor="end" font-size="12" fill="#374151">只管处理规则</text>
+
+  <line x1="270" y1="194" x2="270" y2="208" stroke="#6b7280" stroke-width="2" marker-end="url(#down)"/>
+
+  <rect x="100" y="210" width="340" height="54" rx="8" fill="#93c5fd" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="124" y="240" font-size="14" font-weight="bold" fill="#1e3a8a">数据访问层</text>
+  <text x="416" y="240" text-anchor="end" font-size="12" fill="#1e3a8a">只管读写数据</text>
+
+  <line x1="270" y1="266" x2="270" y2="280" stroke="#6b7280" stroke-width="2" marker-end="url(#down)"/>
+
+  <rect x="100" y="282" width="340" height="54" rx="8" fill="#3b82f6" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="124" y="312" font-size="14" font-weight="bold" fill="#ffffff">数据库</text>
+  <text x="416" y="312" text-anchor="end" font-size="12" fill="#e0e7ff">只管存数据</text>
+
+  <text x="270" y="360" text-anchor="middle" font-size="13" fill="#6b7280">每层只跟相邻层打交道：上层调用下层，下层不知道上层。</text>
+</svg>
