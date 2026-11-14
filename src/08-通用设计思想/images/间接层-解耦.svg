@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrowO" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#e07b00"/>
+    </marker>
+  </defs>
+
+  <text x="270" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">间接层：在 A 和 B 之间加一层，让两边解耦</text>
+
+  <text x="40" y="70" font-size="14" font-weight="bold" fill="#374151">① 直接依赖（绑死）</text>
+
+  <rect x="40" y="86" width="170" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="125" y="114" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">程序 A</text>
+  <rect x="330" y="86" width="170" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="415" y="114" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">服务 B</text>
+
+  <line x1="210" y1="109" x2="330" y2="109" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="270" y="162" text-anchor="middle" font-size="13" fill="#b91c1c">B 一变，A 也得跟着改</text>
+
+  <text x="40" y="206" font-size="14" font-weight="bold" fill="#374151">② 加一层间接（解耦）</text>
+
+  <rect x="40" y="222" width="120" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="100" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">程序 A</text>
+  <rect x="200" y="222" width="140" height="46" rx="8" fill="#fed7aa" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="270" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#c2410c">间接层 C</text>
+  <rect x="380" y="222" width="120" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="440" y="250" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">服务 B</text>
+
+  <line x1="160" y1="245" x2="200" y2="245" stroke="#e07b00" stroke-width="2" marker-end="url(#arrowO)"/>
+  <line x1="340" y1="245" x2="380" y2="245" stroke="#e07b00" stroke-width="2" marker-end="url(#arrowO)"/>
+
+  <text x="270" y="300" text-anchor="middle" font-size="13" fill="#6b7280">A 只认 C；B 换实现、换位置，A 都无感知。</text>
+</svg>

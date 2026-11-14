@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="240" viewBox="0 0 540 240" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <text x="270" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">死锁：任务 A 和 B 互相等对方手里的锁</text>
+
+  <rect x="40" y="100" width="170" height="72" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="125" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#b91c1c">任务 A</text>
+  <text x="125" y="152" text-anchor="middle" font-size="12" fill="#b91c1c">拿着锁 1</text>
+
+  <rect x="330" y="100" width="170" height="72" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="415" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#b91c1c">任务 B</text>
+  <text x="415" y="152" text-anchor="middle" font-size="12" fill="#b91c1c">拿着锁 2</text>
+
+  <line x1="210" y1="120" x2="330" y2="120" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="270" y="110" text-anchor="middle" font-size="12" fill="#b91c1c">想要锁 2</text>
+
+  <line x1="330" y1="158" x2="210" y2="158" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="270" y="178" text-anchor="middle" font-size="12" fill="#b91c1c">想要锁 1</text>
+
+  <text x="270" y="220" text-anchor="middle" font-size="13" fill="#6b7280">A 等 B 放锁 2，B 等 A 放锁 1 —— 循环等待，永远卡住。</text>
+</svg>

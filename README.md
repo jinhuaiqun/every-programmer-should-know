@@ -99,9 +99,9 @@
 - ★ [抽象（Abstraction）](src/08-通用设计思想/01-抽象.md)
 - ★ [分层（Layering）](src/08-通用设计思想/02-分层.md)
 - ★ [分治（Divide & Conquer）](src/08-通用设计思想/03-分治.md)
-- ★ 机制与策略分离（Mechanism vs Policy）
-- ★ 并发（Concurrency）——竞态条件、锁、死锁、同步/异步、事件循环
-- ☆ 间接层（Indirection）——「任何问题都能通过加一层间接来解决」
+- ★ [机制与策略分离（Mechanism vs Policy）](src/08-通用设计思想/04-机制与策略分离.md)
+- ★ [并发（Concurrency）](src/08-通用设计思想/05-并发.md)——竞态条件、锁、死锁、同步/异步、事件循环
+- ☆ [间接层（Indirection）](src/08-通用设计思想/06-间接层.md)——「任何问题都能通过加一层间接来解决」
 - ☆ 局部性（Locality）
 - ☆ 权衡（Trade-off）
 

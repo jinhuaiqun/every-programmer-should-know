@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+
+  <text x="270" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">机制与策略分离：策略灵活可变，机制稳定复用</text>
+
+  <rect x="50" y="66" width="130" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="115" y="94" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">策略 A</text>
+  <rect x="205" y="66" width="130" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="270" y="94" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">策略 B</text>
+  <rect x="360" y="66" width="130" height="46" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="425" y="94" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">策略 C</text>
+
+  <line x1="115" y1="112" x2="200" y2="196" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="270" y1="112" x2="270" y2="196" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="425" y1="112" x2="340" y2="196" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="100" y="198" width="340" height="64" rx="8" fill="#3b82f6" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="270" y="236" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">机制（稳定的底层能力）</text>
+
+  <text x="270" y="300" text-anchor="middle" font-size="13" fill="#6b7280">策略负责「什么时候做」，机制负责「能做什么」——换策略不动机制。</text>
+</svg>
