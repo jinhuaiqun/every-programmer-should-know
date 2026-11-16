@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="350" viewBox="0 0 540 350" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="270" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">存储层级：越近越快，越远越慢</text>
+
+  <text x="40" y="94" font-size="13" fill="#374151">手边 / 桌面</text>
+  <rect x="160" y="70" width="340" height="48" rx="8" fill="#c2410c"/>
+  <text x="176" y="99" font-size="14" font-weight="bold" fill="#ffffff">寄存器 · 缓存</text>
+  <text x="484" y="99" text-anchor="end" font-size="12" fill="#fed7aa">纳秒级</text>
+
+  <text x="40" y="154" font-size="13" fill="#374151">抽屉</text>
+  <rect x="160" y="130" width="340" height="48" rx="8" fill="#10b981"/>
+  <text x="176" y="159" font-size="14" font-weight="bold" fill="#ffffff">内存</text>
+  <text x="484" y="159" text-anchor="end" font-size="12" fill="#d1fae5">几十到上百纳秒</text>
+
+  <text x="40" y="214" font-size="13" fill="#374151">隔壁仓库</text>
+  <rect x="160" y="190" width="340" height="48" rx="8" fill="#8b5cf6"/>
+  <text x="176" y="219" font-size="14" font-weight="bold" fill="#ffffff">磁盘 / SSD</text>
+  <text x="484" y="219" text-anchor="end" font-size="12" fill="#ede9fe">微秒到毫秒</text>
+
+  <text x="40" y="274" font-size="13" fill="#374151">外地 / 云端</text>
+  <rect x="160" y="250" width="340" height="48" rx="8" fill="#374151"/>
+  <text x="176" y="279" font-size="14" font-weight="bold" fill="#ffffff">网络 / CDN</text>
+  <text x="484" y="279" text-anchor="end" font-size="12" fill="#d1d5db">毫秒到几十毫秒</text>
+
+  <text x="270" y="330" text-anchor="middle" font-size="12" fill="#6b7280">层级速度差好几个数量级——把「常用的」放近处（缓存），就能大幅提速。</text>
+</svg>

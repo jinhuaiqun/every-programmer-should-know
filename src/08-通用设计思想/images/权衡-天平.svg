@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="300" viewBox="0 0 540 300" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <text x="270" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d4ed8">权衡：得到一样，往往要放弃另一样</text>
+
+  <line x1="110" y1="124" x2="430" y2="124" stroke="#374151" stroke-width="4"/>
+  <polygon points="270,112 248,130 292,130" fill="#374151"/>
+  <line x1="270" y1="130" x2="270" y2="205" stroke="#374151" stroke-width="4"/>
+  <line x1="200" y1="205" x2="340" y2="205" stroke="#374151" stroke-width="4"/>
+
+  <line x1="110" y1="124" x2="80" y2="150" stroke="#6b7280" stroke-width="1.5"/>
+  <line x1="110" y1="124" x2="140" y2="150" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="80,150 140,150 124,180 96,180" fill="#eef4ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="110" y="170" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d4ed8">得到</text>
+
+  <line x1="430" y1="124" x2="400" y2="150" stroke="#6b7280" stroke-width="1.5"/>
+  <line x1="430" y1="124" x2="460" y2="150" stroke="#6b7280" stroke-width="1.5"/>
+  <polygon points="400,150 460,150 444,180 416,180" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="430" y="170" text-anchor="middle" font-size="14" font-weight="bold" fill="#b91c1c">放弃</text>
+
+  <text x="270" y="238" text-anchor="middle" font-size="12" fill="#6b7280">任何方案都在天平上：想「更快」，往往要「更多内存」或「更复杂」——得到一样，放弃另一样。</text>
+</svg>
